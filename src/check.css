@@ -1,0 +1,39 @@
+.box {
+    background-color: rgba(0, 0, 0, 0.51);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  left: 0;
+}
+
+.successfull, .wrong {
+    color: black;
+    width: 35%;
+    background: white;
+    padding: 15px 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.successfull {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .successfull, .wrong {
+        font-size: 10px;
+        width: 88%;
+    }
+    .successfull samp, .wrong samp {
+        font-size: 16px;
+    }
+}
