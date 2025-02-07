@@ -31,13 +31,13 @@ export default function LoneForm() {
         onSubmit={(event) => {
           event.preventDefault();
           const age = parseInt(formInputs.age, 10);
-          if (age < 18 || age > 60) {
-            setIsWrong(true);
-            setText("Age is NOT ALLOWED");
-          } else if (formInputs.phoneNumber.length !== 11) {
-            setIsWrong(true);
-            setText("Phone number format is INCORRECT");
-          } else {
+         if (age < 18 || age > 60) {
+    setIsWrong(true);
+    setText("Age must be between 18 and 60 years");
+}else if (formInputs.phoneNumber.length < 7 || formInputs.phoneNumber.length > 15) {
+    setIsWrong(true);
+    setText("Phone number must be between 7 and 15 digits");
+} else {
             setIsSubmitted(true);
           }
         }}
@@ -47,7 +47,7 @@ export default function LoneForm() {
           <hr />
           <label>name: </label>
           <input
-            type="text"
+            type="text" placeholder="Name"
             value={formInputs.name}
             onChange={(event) =>
               setFormInputs({ ...formInputs, name: event.target.value })
@@ -56,7 +56,7 @@ export default function LoneForm() {
           <br />
           <label>Phone Number: </label>
           <input
-            type="text"
+            type="text" placeholder="ALLOWED between 7 and 15 numbers"
             value={formInputs.phoneNumber}
             onChange={(event) =>
               setFormInputs({
@@ -68,7 +68,7 @@ export default function LoneForm() {
           <br />
           <label>Age: </label>
           <input
-            type="text"
+            type="text" placeholder="ALLOWED between 18 and 60 years"
             value={formInputs.age}
             onChange={(event) =>
               setFormInputs({
