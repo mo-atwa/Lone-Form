@@ -32,10 +32,11 @@ A sleek and user-friendly loan request form built with **React.js**. This form a
    ```sh  
    npm start  
    ```  
+--------
 
 ## 🌟 About Me  
 
-Hey! I'm **Mohamed Atwa**, a passionate **Front-End Developer** specializing in **React.js**.  
+Hey! I'm Mohamed Atwa, a Front-End Developer with a passion for crafting sleek and responsive web applications using React.js. I'm always eager to learn and take on new challenges.  
 
 🚀 **Portfolio:** [Visit Here](https://atwa-portfolio.netlify.app)  
 📂 **GitHub:** [Check My Projects](https://github.com/mo-atwa)  
